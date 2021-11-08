@@ -1,5 +1,5 @@
 a[target="_blank"] {
-  background-color: green;
+  color: green;
 }
 li {
   background-color: yellow;
@@ -17,7 +17,7 @@ h4 {
 article.new {
   font-size: 24px;
 }
-li.topic.new {
+li.new {
   background-color: red;
 }
 .new.posted-today {
