@@ -1,21 +1,25 @@
-a [target="_blank"] {
-  color: green;
+a[target="_blank"] {
+  background-color: green;
 }
-ul, ol {
+li {
   background-color: yellow;
 }
-footer, header {
+footer,
+header {
   border: 3px dashed blue;
 }
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin-left: 20px;
 }
 article.new {
   font-size: 24px;
 }
 li.topic.new {
- background-color:  red;
+  background-color: red;
 }
 .new.posted-today {
-  border-color: pink;
+  background-color: pink;
 }
