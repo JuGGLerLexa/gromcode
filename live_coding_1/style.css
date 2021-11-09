@@ -25,6 +25,15 @@
   min-height: 200px;
 }
 
+span {
+  font-family: Verdana;
+  margin: auto;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #faebd7;
+  text-transform: lowercase;
+}
+
 @media screen and (min-width: 600px) {
   .products {
     flex-direction: row;
@@ -39,13 +48,4 @@
   .products {
     flex: 2;
   }
-}
-
-span {
-  font-family: Verdana;
-  margin: auto;
-  padding: 8px;
-  border-radius: 4px;
-  background-color: #faebd7;
-  text-transform: lowercase;
 }
