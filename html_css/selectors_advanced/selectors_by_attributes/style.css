@@ -15,7 +15,7 @@ a[href$=".com"] {
   margin-left: 50px;
 }
 /* 5 */
-a[lang|="en"] {
+[lang|=en] {
   font-size: 10px;
 }
 /* 6 */
