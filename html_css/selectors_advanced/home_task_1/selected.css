@@ -3,7 +3,7 @@ img[alt="Pollution"] {
 }
 
 img[src$=".jpg"] {
-  margin-left: 50 px;
+  margin-left: 50px;
 }
 
 li[data-description~="even"] {
