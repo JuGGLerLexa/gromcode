@@ -15,7 +15,7 @@ a[href$=".com"] {
   margin-left: 50px;
 }
 /* 5 */
-[lang|="en"] {
+a[lang*="en"] {
   font-size: 10px;
 }
 /* 6 */
@@ -23,6 +23,6 @@ a[href*="www"] {
   color: green;
 }
 /* 7 */
-a[title~="popular"] {
+a[title*="popular"] {
   font-size: 24px;
 }
