@@ -2,7 +2,6 @@ body {
   background-color: antiquewhite;
 }
 .rectangl {
-  box-sizing: border-box;
   border: 8px solid;
   margin: 16px;
   padding: 16px;
@@ -11,8 +10,11 @@ body {
 }
 .rectangl1 {
   background-color: aquamarine;
+  box-sizing: border-box;
+
 }
 
 .rectangl2 {
+  box-sizing: border-box;
   background-color: azure;
 }
