@@ -1,0 +1,24 @@
+.theory::first-letter {
+  font-size: 36px;
+  color: orange;
+  margin-left: 16px;
+}
+
+.theory::first-line {
+  font-size: 24px;
+}
+
+.theory::selection {
+background-color: red;
+color: white;
+}
+
+a::before {
+  content: '> ';
+  color: green;
+}
+
+a::after {
+  content: ' <';
+  color: green;
+}
