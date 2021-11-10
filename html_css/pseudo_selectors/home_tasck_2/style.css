@@ -15,7 +15,7 @@ li {
 }
 
 p {
-  color: yellow;
+  background-color: yellow;
 }
 
 input {
@@ -30,7 +30,7 @@ input {
   border: 2px solid blue;
 }
 
-div > p {
+div {
   font-size: 25px;
 }
 
@@ -38,8 +38,16 @@ input[type="text"] {
   background-color: gray;
 }
 
-div > p 
-
 div p:nth-child(3)  {
   border: 5px solid white;
+}
+
+div:nth-child(3) p:nth-child(2) {
+  background-color: yellow;
+} 
+
+
+em {
+  color: white;
+  font-size: 20px;
 }
