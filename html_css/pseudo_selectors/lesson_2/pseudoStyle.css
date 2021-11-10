@@ -13,7 +13,7 @@ ul > li span:last-child > span {
   color: white;
 }
 /* парним лі даємо відступи */
-li:nth-child(even) {
+li:nth-child(even) > span {
   margin-left: 16px;
 }
 /* заплутався в номерації виводив 3 дів */
