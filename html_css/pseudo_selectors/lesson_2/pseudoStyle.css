@@ -16,6 +16,7 @@ ul > li span:last-child > span {
 li:nth-child(even) {
   margin-left: 16px;
 }
-p:nth-child(1) {
+/* заплутався в номерації виводив 3 дів */
+p:nth-child(1),p:nth-child(4) {
   background-color: grey;
 }
