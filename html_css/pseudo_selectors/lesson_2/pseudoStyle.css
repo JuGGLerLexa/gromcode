@@ -1,17 +1,21 @@
+/* відступи знизу */
 li {
   margin-bottom: 16px;
 }
+/* першому лі даємо колір */
 ul > li:first-child > span {
   background-color: red;
   color: white;
 }
+/* останньому */
 ul > li:last-child > span {
   background-color: black;
   color: white;
 }
+/* парним лі даємо відступи */
 li:nth-child(even) {
   margin-left: 16px;
 }
-div.paragraphs:nth-child(odd) {
+p:nth-child(odd) {
   background-color: grey;
 }
