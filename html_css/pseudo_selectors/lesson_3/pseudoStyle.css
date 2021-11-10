@@ -14,11 +14,11 @@ color: white;
 }
 
 a::before {
-  content: '> ';
+  content: '> 
   color: green;
 }
 
 a::after {
-  content: ' <';
+  content: '<';
   color: green;
 }
