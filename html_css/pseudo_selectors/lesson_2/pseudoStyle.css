@@ -8,7 +8,7 @@ ul > li:first-child > span {
   color: white;
 }
 /* останньому */
-ul > li:last-child > span {
+ul > li span:last-child > span {
   background-color: black;
   color: white;
 }
@@ -16,6 +16,6 @@ ul > li:last-child > span {
 li:nth-child(even) {
   margin-left: 16px;
 }
-p:nth-child(odd) {
+p:nth-child(1) {
   background-color: grey;
 }
