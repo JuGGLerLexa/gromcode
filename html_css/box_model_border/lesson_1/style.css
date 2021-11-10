@@ -10,7 +10,7 @@ body {
 }
 .rectangl1 {
   background-color: aquamarine;
-  box-sizing: border-box;
+  box-sizing: content-box;
 
 }
 
