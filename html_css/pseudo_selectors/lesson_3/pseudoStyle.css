@@ -14,7 +14,7 @@ color: white;
 }
 
 a::before {
-  content: '> 
+  content: '>';
   color: green;
 }
 
