@@ -1,0 +1,21 @@
+ .text {
+   display: inline-block;
+  margin:16px;
+  border-bottom: 1px dotted black;
+  position: relative;
+}
+.tooltip {
+  background-color: gray;
+  color: white;
+  padding: 8px;
+  border-radius: 4px ;
+  position: absolute;
+  bottom: -40px;
+  left: 0px;
+  min-width: 100px;
+  display: none;
+}
+div:hover .tooltip {
+  display: inline;
+  list-style-type: none;
+}
