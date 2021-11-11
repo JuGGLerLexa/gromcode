@@ -1,0 +1,33 @@
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+}
+
+section {
+  margin: 32px;
+}
+
+h1 {
+  word-spacing: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  line-height: 28px;
+}
+
+/* доробити... */
+/* {
+  letter-spacing: 3px;
+  font-size: 24px;
+  opacity: 80%;
+  text-decoration: underline;
+} */
+
+a {
+  text-decoration: none;
+}
+.em {
+  color: gray;
+}
