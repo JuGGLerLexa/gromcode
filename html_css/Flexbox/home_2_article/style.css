@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+.article {
+  box-sizing: border-box;
+  background-color: bisque;
+  margin: 8px;
+  padding: 16px;
+  flex-basis:300px;
+  flex-grow: 1;
+}
+.articles-list {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 300px;
+}
