@@ -1,0 +1,80 @@
+header {
+  height: 40px;
+  background-color: darkturquoise;
+}
+
+header nav {
+  height: 40px;
+  display: block;
+  width: 100%;
+  position: fixed;
+  background-color: darkturquoise;
+  z-index: 4;
+}
+
+ul {
+  margin: 0px;
+  line-height: 40px;
+  list-style: none;
+}
+
+li {
+  float: left;
+  margin-left: 16px;
+  color: white;
+}
+
+main {
+  background-color: beige;
+  height: 5000px;
+}
+
+.head {
+  z-index: 2;
+  height: 200px;
+  width: 200px;
+  background-color: aquamarine;
+  position: absolute;
+  margin: auto;
+  /* !!!!! */
+  top: calc(50% - 100px);
+  /* !!!! */
+  left: 0;
+  right: 0;
+}
+
+.ear {
+  height: 60px;
+  width: 40px;
+  background-color: brown;
+  position: absolute;
+}
+
+.ear_right {
+  top: -60px;
+  right: -40px;
+}
+
+.ear_left {
+  left: -40px;
+  top: -60px;
+}
+
+.eye {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background-color: gray;
+  margin-top: 80px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.eye_left {
+  float: left;
+  position: absolute;
+}
+
+.eye_right {
+  float: right;
+}
