@@ -1,6 +1,5 @@
 .header {
   display: flex;
-  justify-content: center;
 }
 .article {
   box-sizing: border-box;
@@ -14,4 +13,8 @@
   display: flex;
   flex-wrap: wrap;
   min-width: 300px;
+}
+h1 {
+  justify-content: center;
+  text-align: center;
 }
