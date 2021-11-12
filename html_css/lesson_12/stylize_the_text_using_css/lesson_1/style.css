@@ -17,13 +17,11 @@ p {
   line-height: 28px;
 }
 
-/* доробити... */
-/* {
-  letter-spacing: 3px;
+p::first-line {  letter-spacing: 3px;
   font-size: 24px;
   opacity: 80%;
   text-decoration: underline;
-} */
+}
 
 a {
   text-decoration: none;
