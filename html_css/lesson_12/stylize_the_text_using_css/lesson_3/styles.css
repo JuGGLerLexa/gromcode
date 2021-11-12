@@ -2,15 +2,12 @@ li {
   list-style: none;
   font-size: 1.5em;
 }
-
-/* .third {
-  text-decoration: green underline;
-} */
-
+.first {
+  text-decoration: red overline;
+}
 .second {
   text-decoration: line-through;
 }
-
-.first {
-  text-decoration: red overline;
+.third {
+  text-decoration: green underline;
 }
