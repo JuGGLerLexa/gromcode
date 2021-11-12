@@ -11,13 +11,15 @@ h1 {
   word-spacing: 20px;
   text-transform: uppercase;
   text-align: center;
+  /* letter-spacing: 5px; */
 }
 
 p {
   line-height: 28px;
 }
 
-p::first-line {  letter-spacing: 3px;
+.technology {  
+  letter-spacing: 3px;
   font-size: 24px;
   opacity: 80%;
   text-decoration: underline;
@@ -26,6 +28,7 @@ p::first-line {  letter-spacing: 3px;
 a {
   text-decoration: none;
 }
+
 .em {
   color: gray;
 }
