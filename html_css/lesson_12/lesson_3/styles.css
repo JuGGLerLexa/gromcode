@@ -8,6 +8,18 @@ font-size: 1.5em;
 .second {
   text-decoration: line-through;
 }
+li {
+  text-decoration: none;
+}
+.list {
+  font-size: 1.5em;
+}
 .first {
   text-decoration: red overline;
+}
+.second {
+text-decoration: line-through;
+}
+.third {
+text-decoration: green underline;
 }
