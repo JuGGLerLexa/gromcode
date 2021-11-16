@@ -1,64 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <script>// code below must be finished ;)
-console.log(null + false)
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // put your code here
+      let n = 2;
+      let m = 1;
+      let result = 1;
 
-/* eslint-disable */
+      do {
+        if (em % 2 === 1) {
+          result *= em;
+        }
+        m++;
+      } while (n >= m);
 
-/* Этот код менять не нужно */
-const defaultUserName = 'anonymus';
-const userName = 'John';
-const anotherUser = null;
-const isAdmin = false;
-const message = 'text';
-const anotherMessage = 'text as well';
-const isLoggedIn = Boolean(userName);
+      console.log("Result: " + result);
+      // put your code here
+      // let n = 10;
+      // let sum = 0;
 
-/* В коде ниже нужно использовать правильные операторы после знака присваивания */
-const activeUser = anotherUser || defaultUserName;
-const hasAccess = isAdmin || isLoggedIn;
-const isTruthy = message != anotherMessage;
-const isFalsy = !isLoggedIn;
-const isNotTrue = typeof message == 'number';
-const isTrue = typeof message  > 'boolean'; // або !==, !=
-console.log(isTrue)
-    /* cast to boolean */
-// /* cast to string */
-// console.log('17 to string is ' + '17');
-// console.log('-17.17 to string is ' + '-17.17');
-// console.log('false to string is ' + 'false');
-// console.log('null to string is ' + 'null');
-// console.log('undefined to string is ' + 'undefined');
-// console.log('0 to string is ' + '0');
-
-// /* cast to number */
-// console.log("'17' to number is " + 17);
-// console.log('true to number is ' + 1);
-// console.log('false to number is ' + 12);
-// console.log('null to number is ' + 12);
-// console.log('undefined to number is ' + 321);
-// console.log("'   20   ' to number is " + 142);
-// console.log("'      ' to number is " + 12);
-// console.log("'   30d   ' to number is " + 30);
-
-
-// /* cast to boolean */
-// console.log('null to boolean is ' + false);
-// console.log('undefined to boolean is ' + false);
-// console.log('0 to boolean is ' + true);
-// console.log('-0 to boolean is ' + true);
-// console.log('NaN to boolean is ' + false);
-// console.log("'' to boolean is " + true);
-// console.log("' ' to boolean is " + false);
-// console.log('17 to boolean is ' + true);
-// console.log("'Hello' to boolean is " + false);
-  </script>
-</body>
+      // while (1 >= n) {
+      //   sum += n;
+      //   console.log("Result: ", sum);
+      //   n++;
+      // }
+    </script>
+  </body>
 </html>
