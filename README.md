@@ -1,2 +1,0 @@
-# gromcode
-study

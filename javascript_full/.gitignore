@@ -1,0 +1,5 @@
+/node_modules
+/.eslintrc.js
+/.prettierrc
+/babel.config.js
+/*.json
