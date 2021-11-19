@@ -15,8 +15,8 @@ sum(-2, 10); // ==> 8
 
 // 2
 
-//put your code here
-let hola = 'Hi, ';
+// put your code here
+const hola = 'Hi, ';
 function sayHi(name) {
   const say = hola + name;
   console.log(say);
@@ -25,11 +25,10 @@ function sayHi(name) {
 sayHi('Lexa');
 
 // 3
-//put your code here
+// put your code here
 function getEvenOdd(num) {
   if (num % 2 === 0) {
     return 'even';
-  } else {
-    return 'odd';
   }
+  return 'odd';
 }
