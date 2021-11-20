@@ -20,7 +20,7 @@ function getSpecialNumbers(from, to) {
 
   for (let i = from; i <= to; i += 1) {
     if (i % 3 === 0) {
-      specialNumber.pop(i);
+      specialNumber.push(i);
     }
   }
   return specialNumber;
