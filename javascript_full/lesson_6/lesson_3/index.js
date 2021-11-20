@@ -8,11 +8,11 @@
 function getSpecialNumbers(from, to) {
   // put your code here
   // if (!Array.isArray(from, to)) return
-  let newA = [];
+  const newArr = [];
   for (let i = from; i <= to; i += 1) {
-    if (i % 3 === 0) newA.push(i);
+    if (i % 3 === 0) newArr.push(i);
   }
-  return newA;
+  return newArr;
 }
 // examples
 console.log(getSpecialNumbers(1, 10)); // ==> [3, 6, 9]
