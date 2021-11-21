@@ -1,4 +1,4 @@
-const checkSum = (arr) => {
+const checkSum = arr => {
   if (!Array.isArray(arr)) return null;
 
   let sum = 0;
