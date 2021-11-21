@@ -6,6 +6,7 @@
  */
 function squareArray(arr) {
   // put your code here
+  return arr * arr;
 }
 
 // examples

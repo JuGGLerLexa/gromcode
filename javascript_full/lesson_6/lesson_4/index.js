@@ -16,7 +16,8 @@ function swap(numbers) {
  */
 function swapManual(numbers) {
   // put your code here
-  let numbersArr = [];
+  const numbersArr = [];
+  // eslint-disable-next-line no-restricted-syntax
   for (const sum of numbers) {
     if (sum !== numbers[0]) numbersArr.push(sum);
   }
