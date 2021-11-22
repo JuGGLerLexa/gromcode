@@ -8,11 +8,11 @@ const numbersList = [1, 2, 3, 4, 5];
 // input: num
 // outinput: num
 
-const res = numbersList.push('sdaas');
+// const res = numbersList.push('sdaas');
 // numbersList[numbersList.length] = 222;
-console.log(res);
+// console.log(res);
 
-console.log(numbersList);
+// console.log(numbersList);
 /* pop - удалит из массива последний элемент и вернет его */
 
 // c помощью метода pop достань последний элемент массива numbersList1 и помести его в переменную lastNumber
@@ -89,21 +89,39 @@ const anotherNumbersList = [5, 0, 8, 10, -4, 50, 220];
 // calback printer
 // input: num
 // out: undefined
-function sum(from, to, printer) {
-  let result = 0;
-  for (let index = from; index <= to; index += 1) {
-    result += index;
+// function sum(from, to, printer) {
+//   let result = 0;
+//   for (let index = from; index <= to; index += 1) {
+//     result += index;
+//   }
+//   printer(result);
+//   // put your code here
+// }
+
+// // test data
+// const num1 = 5;
+// const num2 = 10;
+
+// function printResultExample(res) {
+//   // put your code here
+//   console.log('Result is ' + res);
+//   // alert(res);
+// }
+
+//
+//
+//
+//
+//
+//
+anotherNumbersList.filter();
+
+const filterRes = anotherNumbersList.filter(function (num) {
+  if (num > 10) {
+    return true;
+  } else {
+    return false;
   }
-  printer(result);
-  // put your code here
-}
+});
 
-// test data
-const num1 = 5;
-const num2 = 10;
-
-function printResultExample(res) {
-  // put your code here
-  console.log('Result is ' + res);
-  // alert(res);
-}
+console.log(filterRes);
