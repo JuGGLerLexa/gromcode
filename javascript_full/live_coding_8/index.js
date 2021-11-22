@@ -119,9 +119,8 @@ anotherNumbersList.filter();
 const filterRes = anotherNumbersList.filter(function (num) {
   if (num > 10) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 });
 
 console.log(filterRes);
