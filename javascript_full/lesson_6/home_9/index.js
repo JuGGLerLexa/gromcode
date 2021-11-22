@@ -9,6 +9,8 @@ const withdraw = (clients, balances, client, amount) => {
   return cheak;
 };
 
+// tests
+
 const testClients = ['lexa', 'anya', 'katya'];
 const testBalaces = [1000, 0, 123];
 
