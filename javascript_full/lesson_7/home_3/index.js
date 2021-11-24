@@ -22,3 +22,6 @@ const increaseEvenEl = (arr, delta) => {
 const num = [20, 10, 30, 60, 75];
 const testnum = 10;
 console.log(increaseEvenEl(num, testnum));
+
+const num1 = [1, 12, 130, 1400, 7532];
+console.log(increaseEvenEl(num1, 15));
