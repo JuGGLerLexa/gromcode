@@ -1,10 +1,11 @@
+/* eslint-disable no-return-assign */
+
 'use strict';
 
 const withdraw = (clients, balances, client, amount) => {
   const clientId = clients.indexOf(client);
   if (balances[clientId] >= amount) {
     // eslint-disable-next-line no-param-reassign
-    // eslint-disable-next-line no-return-assign
     return (balances[clientId] -= amount);
   }
   // console.log(balances);
