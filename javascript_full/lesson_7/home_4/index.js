@@ -1,5 +1,11 @@
+// input: arr
+// outinput: newArr
+
+// якщо переданий не масив виводимо null,
+// якщо масив клонуємо його
+
 const cloneArr = arr => {
-  if (!Array.isArray) {
+  if (!Array.isArray(arr)) {
     return null;
   }
   return arr.slice();
