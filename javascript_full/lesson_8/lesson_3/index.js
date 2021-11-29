@@ -9,7 +9,7 @@
 function getKeys(obj) {
   // put you code here
   for (const key in obj) {
-    console.log(getKeys);
+    console.log(key);
   }
 }
 
