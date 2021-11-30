@@ -1,5 +1,6 @@
 // input: obj1, obj2
 // out: bool
+// json stringify cheat ^_^
 
 // algo
 // 1. compare length, if not equal -> false
