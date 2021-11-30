@@ -13,11 +13,11 @@
 // console.log(Object.values(user));
 // console.log(Object.entries(user));
 
-const user = {
-  Tom: 17,
-  'John Doe': 19,
-  Bob: 18,
-};
+// const user = {
+//   Tom: 17,
+//   'John Doe': 19,
+//   Bob: 18,
+// };
 
 // const getAdults = usersObj => {
 //   // { 'Tom': 17, 'John Doe': 19, } => [ ['Tom', 17], ['John Doe', 19] ]
@@ -36,9 +36,18 @@ const user = {
 
 // refactoring
 
-const getAdults = usersObj =>
-  Object.entries(usersObj)
-    .filter(user => user[1] >= 18)
-    .map(user => user[0]);
+// const getAdults = usersObj =>
+//   Object.entries(usersObj)
+//     .filter(user => user[1] >= 18)
+//     .map(user => user[0]);
 
-console.log(getAdults(user)); /* 'John Doe', 'Bob' */
+// console.log(getAdults(user)); /* 'John Doe', 'Bob' */
+
+const user = {
+  name: 'Tom',
+  key: 17,
+};
+
+const concatProps = obj => Object.values(obj);
+
+console.log(concatProps(user));
