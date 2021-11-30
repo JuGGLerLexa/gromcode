@@ -2,6 +2,13 @@
 // out: bool
 // json stringify cheat ^_^
 
+// https://gromcode.com/courses/javascript-full/tasks/3337
+
+// коли на роботу (срок)
+// скільки заробляти (зп)
+// де працювати (город)
+// + що від проекту
+
 // algo
 // 1. compare length, if not equal -> false
 // 2. iterate obj1 keys
