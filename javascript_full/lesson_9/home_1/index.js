@@ -4,5 +4,5 @@ function getKeys(obj) {
 }
   
 
-const people = { 'John Doe': 19, Tom: 17, Bob: 18 };
+const people = { 'John Doe': 19, Tom: 17, Bob: 18, Lexa: 21, };
 getKeys(people);
