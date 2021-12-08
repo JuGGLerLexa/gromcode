@@ -1,7 +1,11 @@
+/* eslint-disable no-return-assign */
+/* eslint-disable no-undef */
+/* eslint-disable no-plusplus */
+/* eslint-disable prettier/prettier */
 function run() {
-  var a = 0;
-
-  if (a == 1) {
+  const a = 0;
+  
+  if (a === 1) {
     return c;
   }
 
