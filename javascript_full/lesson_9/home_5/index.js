@@ -1,8 +1,7 @@
 const getTotalRevenue = transactions => {
   const result = [];
   const getAmount = transactions.amount;
-  return getAmount;
-  //   return result.map.Object.values(transactions);
+  return result.push(getAmount);
 };
 
 // const getTotalRevenue = transactions => {
