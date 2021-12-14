@@ -25,10 +25,7 @@ function addPropertyV3(userData, userId) {
   return result;
 }
 
-function addPropertyV4(userData, userId) {
-  const res = Object.assign({ ...userData }, { id: userId });
-  return res;
-}
+const addPropertyV4 = (userData, userId) => Object.assign({ ...userData }, { id: userId });
 
 // examples
 const user = {
@@ -40,6 +37,6 @@ addPropertyV1(user, '1234567'); // ==> { name: 'Sam', id: '1234567' }
 addPropertyV2(user, '1234567'); // ==> { name: 'Sam', id: '1234567' }
 
 addPropertyV3(user, '1234567'); // ==> { name: 'Sam', id: '1234567' }
-console.log(user);
 
+console.log(user);
 console.log(addPropertyV4(user, '1234567')); // ==> { name: 'Sam', id: '1234567' }
