@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Стилизуем списки</title>
+    <title>Стилизуем background</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
@@ -16,19 +16,26 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     .block {
       padding: 32px;
       text-align: center;
       font-size: 32px;
       text-transform: uppercase;
+      color: #fff;
       height: 500px;
       width: 300px;
-      background-color: #ff0000;
+      /* background-color: #ff0000; */
       background-image: url(nature.jpeg);
       background-position: center;
+      /* background-clip: ; */
     }
   </style>
   <body>
     <div class="block">some Text here</div>
   </body>
 </html>
+
+// 15:31
