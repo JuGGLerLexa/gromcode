@@ -10,20 +10,16 @@
  * для этой задачи он отключен аннотацией eslint-disable
  * */
 
+// first look in task
+
 function addPropertyV1(userData, userId) {
   userData.id = userId;
   return userData;
 }
 
-function addPropertyV2(userData, userId) {
-  const result = Object.assign(userData, { id: userId });
-  return result;
-}
+const addPropertyV2 = (userData, userId) => Object.assign(userData, { id: userId });
 
-function addPropertyV3(userData, userId) {
-  const result = Object.assign({}, userData, { id: userId });
-  return result;
-}
+const addPropertyV3 = (userData, userId) => Object.assign({}, userData, { id: userId });
 
 const addPropertyV4 = (userData, userId) => Object.assign({ ...userData }, { id: userId });
 
