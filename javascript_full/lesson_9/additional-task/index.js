@@ -31,6 +31,6 @@ const obj4 = {
   age: 17,
 };
 
-compareObjects(obj1, obj2); // ==> false
-compareObjects(obj2, obj3); // ==> false
-compareObjects(obj1, obj4); // ==> true
+console.log(compareObjects(obj1, obj2)); // ==> false
+console.log(compareObjects(obj2, obj3)); // ==> false
+console.log(compareObjects(obj1, obj4)); // ==> true
