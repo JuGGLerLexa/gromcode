@@ -11,24 +11,42 @@
       integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
       crossorigin="anonymous"
     />
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      .imege-container {
-        margin: 50px;
-      }
-      /* img {
-        border-radius: 20px;
-      } */
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="imege-container">
+    <div class="image-container">
       <img
+        class="main-image"
         src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/big.jpeg"
         alt="tree and nature"
       />
+    </div>
+    <div class="gallery">
+      <figure class="card">
+        <img
+          class="opacity"
+          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/small.jpg"
+          alt="opacity"
+        />
+        <figcaption class="caption">Opacity</figcaption>
+      </figure>
+      <figure class="card">
+        <img
+          class="blur"
+          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/small.jpg"
+          alt="Blur"
+        />
+        <figcaption class="caption">Blur</figcaption>
+      </figure>
+      <figure class="card">
+        <img
+          class="invert"
+          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/small.jpg"
+          alt="Invert"
+        />
+        <figcaption class="caption">invert</figcaption>
+        c
+      </figure>
     </div>
   </body>
 </html>
