@@ -1,7 +1,7 @@
 .video {
+  margin: 100px auto;
   display: block;
-  padding: 100px auto;
+  align-items: center;
   width: 500px;
   height: 400px;
-  align-items: center;
 }
