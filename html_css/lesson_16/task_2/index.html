@@ -2,42 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Atrybyte form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-      integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <form>
-      <div>
-        <input type="text" name="lastName" value="Emerson" readonly />
-        <label for="">Last Name</label>
+      <div class="form-control">
+        <label for="last-name-form-control">Last Name</label>
+        <input type="text" id="last-name-form-control" name="lastName" value="Emerson" readonly />
       </div>
-      <div>
-        <input type="number" name="age" value="17" min="3" max="10" required />
-        <label for="">Age</label>
+      <div class="form-control">
+        <label for="label-age">Age</label>
+        <input type="number" id="label-age" name="age" min="3" max="10" value="17" required />
       </div>
-      <div>
-        <input type="checkbox" name="agree" disabled />
-        <label>Accept terms and conditions</label>
+      <div class="form-control">
+        <label for="checkbox-control">
+          <input type="checkbox" id="checkbox-control" name="agree" disabled />
+          Accept terms and conditions
+        </label>
       </div>
       <div class="choose-gender">
-        <input type="radio" name="gender" />
-        <label for="">Male</label>
-        <input type="radio" name="gender" />
-        <label for="">Female</label>
-        <input type="radio" name="gender" checked />
-        <label for="">Secret</label>
+        <input type="radio" id="gender-male" name="gender" />
+        <label for="gender-male">Male</label>
+        <input type="radio" id="gender-female" name="gender" />
+        <label for="gender-female">Female</label>
+        <input type="radio" id="gender-secret" name="gender" checked />
+        <label for="gender-secret">Secret</label>
       </div>
       <div class="form-control">
         <textarea
+          maxlength="10"
           name="description"
           placeholder="Write description..."
-          maxlength="10"
           required
         ></textarea>
       </div>
