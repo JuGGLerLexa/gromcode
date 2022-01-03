@@ -11,6 +11,8 @@
 }
 
 .image-button {
+  width: 200px;
+  height: 50px;
   position: absolute;
   top: calc(50% - 25px);
   left: calc(50% - 100px);
@@ -20,11 +22,11 @@
   opacity: 0.5;
   cursor: pointer;
   text-transform: uppercase;
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
 
 .image-button:hover {
-    opacity: 1;
+  opacity: 1;
 }
