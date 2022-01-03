@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Form with a few inputs</title>
+    <title>Atrybyte form</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
@@ -12,6 +12,38 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-
+    <form>
+      <div>
+        <input type="text" name="lastName" value="Emerson" readonly />
+        <label for="">Last Name</label>
+      </div>
+      <div>
+        <input type="number" name="age" value="17" min="3" max="10" required />
+        <label for="">Age</label>
+      </div>
+      <div>
+        <input type="checkbox" name="agree" disabled />
+        <label>Accept terms and conditions</label>
+      </div>
+      <div class="choose-gender">
+        <input type="radio" name="gender" />
+        <label for="">Male</label>
+        <input type="radio" name="gender" />
+        <label for="">Female</label>
+        <input type="radio" name="gender" checked />
+        <label for="">Secret</label>
+      </div>
+      <div class="form-control">
+        <textarea
+          name="description"
+          placeholder="Write description..."
+          maxlength="10"
+          required
+        ></textarea>
+      </div>
+      <div class="form-control">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
   </body>
 </html>
