@@ -11,7 +11,33 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
 
+  <body>
+    <form>
+      <div>
+        <input type="text" name="lastName" value="Emerson" />
+      </div>
+      <div>
+        <input type="number" name="age" value="17" />
+      </div>
+      <div>
+        <input type="checkbox" name="agree" />
+        <label>Accept terms and conditions</label>
+      </div>
+      <div class="choose-gender">
+        <input type="radio" name="gender" />
+        <label for="">Male</label>
+        <input type="radio" name="gender" />
+        <label for="">Female</label>
+        <input type="radio" name="gender" />
+        <label for="">Secret</label>
+      </div>
+      <div class="form-control">
+        <textarea name="description" placeholder="Write description..."></textarea>
+      </div>
+      <div class="form-control">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
   </body>
 </html>
