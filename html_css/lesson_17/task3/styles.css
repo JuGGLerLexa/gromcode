@@ -1,13 +1,30 @@
 * {
   box-sizing: border-box;
 }
-
-table {
-  margin: 16px;
-}
-
 table,
 td {
   border: 1px solid black;
   border-collapse: collapse;
+}
+table {
+  margin: 16px;
+}
+td {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.letters {
+  border: transparent;
+  background-color: transparent !important;
+}
+.numbers {
+  border: transparent;
+  background-color: transparent !important;
+}
+tbody tr:nth-child(even) td:nth-child(odd) {
+  background-color: black;
+}
+tbody tr:nth-child(odd) td:nth-child(even) {
+  background-color: black;
 }
