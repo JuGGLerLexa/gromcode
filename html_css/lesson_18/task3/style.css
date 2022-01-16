@@ -1,24 +1,25 @@
-div {
+.div {
+  margin: 0;
   display: flex;
   justify-content: space-around;
 }
 
-.fa.fa-battery-full {
+.fa-battery-full {
   font-size: 16px;
 }
 
-.fa.fa-battery-three-quarters {
+.fa-battery-three-quarters {
   font-size: 32px;
 }
 
-.fa.fa-battery-half {
+.fa-battery-half {
   font-size: 64px;
 }
 
-.fa.fa-battery-quarter {
+.fa-battery-quarter {
   font-size: 128px;
 }
 
-.fa.fa-battery-empty {
+.fa-battery-empty {
   font-size: 256px;
 }
