@@ -10,8 +10,26 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-  </head>
+    <style>
+      .square {
+        width: 100px;
+        height: 100px;
+        background-color: coral;
+        position: absolute;
+        animation: move 2s;
+        animation-iteration-count: infinite;
+      }
 
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: 300px;
+        }
+      }
+    </style>
+  </head>
   <body>
     <div class="square"></div>
   </body>
