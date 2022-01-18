@@ -1,3 +1,8 @@
+.main {
+  width: 300px;
+  height: 300px;
+}
+
 .square {
   width: 100px;
   height: 100px;
@@ -5,7 +10,7 @@
   position: absolute;
   animation: move 4s;
   animation-direction: alternate;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 2;
 }
 
 @keyframes move {
@@ -20,17 +25,17 @@
     background-color: cornflowerblue;
   }
   50% {
-    top: 300px;
     left: 300px;
-    background-color: aqua;
+    top: 300px;
   }
   75% {
-    top: 300px;
     left: 0;
-    background-color: yellowgreen;
+    top: 300px;
+    background-color: aqua;
   }
   100% {
-    top: 0px;
-    left: 0px;
+    left: 0;
+    top: 0;
+    background-color: yellowgreen;
   }
 }
