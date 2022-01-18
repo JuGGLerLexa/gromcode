@@ -1,6 +1,36 @@
-/* .square {
+.square {
   width: 100px;
   height: 100px;
   background-color: coral;
   position: absolute;
-} */
+  animation: move 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+    right: 0;
+    background-color: coral;
+  }
+  25% {
+    left: 300px;
+    top: 0;
+    background-color: cornflowerblue;
+  }
+  50% {
+    top: 300px;
+    left: 300px;
+    background-color: aqua;
+  }
+  75% {
+    top: 300px;
+    left: 0;
+    background-color: yellowgreen;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}

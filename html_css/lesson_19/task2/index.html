@@ -10,44 +10,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <style>
-      .square {
-        width: 100px;
-        height: 100px;
-        background-color: coral;
-        position: absolute;
-        animation: move 5s 4s ;
-        animation-iteration-count: infinite;
-      }
-
-      @keyframes move {
-        0% {
-          left: 0;
-          right: 0;
-          background-color: coral;
-        }
-        25% {
-          top: 0;
-          left: 300px;
-          background-color: aqua;
-        }
-        50% {
-          top: 300px;
-          left: 300px;
-          background-color: green;
-        }
-        75% {
-          top: 300px;
-          left: 0;
-          background-color: yellow;
-        }
-        100% {
-          top: 0px;
-          left: 0px;
-          background-color: red;
-        }
-      }
-    </style>
   </head>
   <body>
     <div class="square"></div>
