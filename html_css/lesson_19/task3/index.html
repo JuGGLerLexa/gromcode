@@ -10,6 +10,38 @@
       crossorigin="anonymous"
     />
     <style>
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .spinner {
+        position: relative;
+      }
+
+      .spinner-text {
+        font-family: monospace;
+        font-size: 16px;
+        text-transform: uppercase;
+        animation: blinking 2s infinite linear;
+      }
+
+      .rect {
+        position: absolute;
+        background-color: black;
+        width: 10px;
+        height: 4px;
+        border-radius: 2px;
+
+        animation: moving 2s, blinking 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
       @keyframes moving {
         from {
           left: 0;
