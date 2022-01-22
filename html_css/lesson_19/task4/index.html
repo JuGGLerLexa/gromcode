@@ -13,14 +13,39 @@
       * {
         box-sizing: border-box;
       }
+
       .block {
-        font-family: Arial, Helvetica, sans-serif;
+        width: 250px;
+        height: 100px;
+        position: absolute;
+        border-radius: 10px;
         font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: coral;
         font-weight: 700;
-        /* color: white; */
+        color: white;
         text-transform: uppercase;
-        
-    }
+        line-height: 100px;
+        text-align: center;
+
+        left: calc(50vw - 125px);
+        top: -100px;
+        animation: move 2s;
+        transition-timing-function: ease;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes move {
+        from {
+          left: calc(50vw - 125px);
+          top: -100px;
+        }
+
+        to {
+          left: calc(50vw - 125px);
+          top: calc(50vh - 50px);
+        }
+      }
     </style>
   </head>
 
