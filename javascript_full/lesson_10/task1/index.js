@@ -1,6 +1,6 @@
-// getfiniteNumbers
+const getfiniteNumbers = arr => arr.filter(el => Number.isFinite(el));
 
-// getfiniteNumbersV2
+const getfiniteNumbersV2 = arr => arr.filter(el => isFinite);
 
 // getNaN
 
