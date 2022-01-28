@@ -14,7 +14,7 @@ const random1 = [123, 2142, '  2134', NaN, undefined, null];
 console.log(getFiniteNumbers(random));
 console.log(getIntegers(random1));
 
-const isEqualTo = getfiniteNumbers === getfiniteNumbersV2;
+const isEqualTo = getFiniteNumbers === getFiniteNumbersV2;
 
 console.log(isEqualTo);
 console.log(Number.isNaN === isNaN);
