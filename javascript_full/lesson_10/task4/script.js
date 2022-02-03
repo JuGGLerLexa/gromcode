@@ -9,7 +9,7 @@ function getMaxAbsoluteNumber(arr) {
   const array = arr.map(i => {
     return Math.abs(i); // The Math.abs() method returns the absolute value of a number.
   });
-  const result = Math.max(...array); // через декілька днів рефакторингу в гуглі натикаюсь і згадую за спред оператор :( "вік живи - вік вчись."
+  const result = Math.max(...array); // через декілька днів рефакторингу в гуглі натикаюсь і згадую за спред (...) оператор :( "вік живи - вік вчись."
   return result;
 }
 
