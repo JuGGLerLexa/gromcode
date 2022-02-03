@@ -1,5 +1,8 @@
 function getMaxAbsoluteNumber(arr) {
-  if (!Array.isArray(arr) || arr.length < 1) {
+  if (
+    !Array.isArray(arr) ||
+    arr.length < 1 // якщо масив пустий, щоб не виводило -infinity
+  ) {
     // перевірка на масив
     return null;
   }
@@ -15,3 +18,4 @@ console.log(getMaxAbsoluteNumber([-10, 10, -10])); // ===> 10
 console.log(getMaxAbsoluteNumber([2.1, 0, 1.6])); // ===> 2.1
 console.log(getMaxAbsoluteNumber([-6, 3, 5, -1])); // ===> 6
 console.log(getMaxAbsoluteNumber([-777, 3, -1, 45, -20])); // ===> 777
+console.log(getMaxAbsoluteNumber([])); // not -infinity === null!!!
