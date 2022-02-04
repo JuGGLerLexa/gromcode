@@ -1,14 +1,7 @@
 const getRandomNumbers = (length, from, to) => {
-  // put your code here
-  if (to - from < 1) {
-    return null;
-  }
-  const arr = [];
-  for (let i = 0; i < length; i += 1) {
-    const num = Math.random() * (to - from) + from;
-    arr.push(Math.floor(num));
-  }
-  return arr;
+  if (Math.ceil(from) > to) return null;
+
+  return new Array(length).fill().map(() => Math.round(Math.random() * (to - from) + from));
 };
 
 // examples
