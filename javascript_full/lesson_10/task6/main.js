@@ -5,6 +5,13 @@ const getRandomNumbers = (length, from, to) => {
 };
 
 // examples
-console.log(getRandomNumbers(5, 1.4, 3.22)); // ==> [2, 2, 2, 3, 2]
-console.log(getRandomNumbers(5, 5.4, 7.22)); // ==> [3, 2, 2, 2, 2]
-console.log(getRandomNumbers(5, 4.4, 5.22)); // ==> [3, 3, 2, 3, 2]
+// console.log(getRandomNumbers(5, 1.4, 3.22)); // ==> [2, 2, 2, 3, 2]
+// console.log(getRandomNumbers(5, 5.4, 7.22)); // ==> [3, 2, 2, 2, 2]
+// console.log(getRandomNumbers(5, 4.4, 5.22)); // ==> [3, 3, 2, 3, 2]
+
+console.log(getRandomNumbers(1, 1, 1));
+console.log(getRandomNumbers(2, 2, 2));
+console.log(getRandomNumbers(3, 3, 3));
+console.log(getRandomNumbers(1, 2, 3));
+console.log(getRandomNumbers(5, 2.2, 3.3));
+console.log(getRandomNumbers(1, 3, 2));
