@@ -1,5 +1,4 @@
 const superRound = (num, prec) => {
-  // put your code here
   const precPow = 10 ** prec;
 
   const res = [
