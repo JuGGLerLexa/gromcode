@@ -3,8 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>3D transformation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+      }
+      .fancy-button {
+        width: 150px;
+        height: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 700;
+        background-image: linear-gradient(45deg, yellow, red);
+        color: white;
+        border-radius: 4px;
+        border: none;
+        margin: auto;
+        animation: jump 0.5s, spin 0.5s 0.4s, hide 0.5s 2s forwards;
+      }
+      @keyframes jump {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-40px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes hide {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(2000px);
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <button class="fancy-button">Fancy button</button>
+  </body>
 </html>
+
+<!-- transformation and animation -->
