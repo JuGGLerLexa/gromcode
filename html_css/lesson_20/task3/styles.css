@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  margin: auto;
+}
+
+.spinner {
+  display: flex;
+  font-family: monospace;
+  font-size: 16px;
+  text-transform: uppercase;
+  /* піднімають коло над надписом */
+  flex-direction: column;
+  align-items: center;
+  /*  */
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  border: 4px solid;
+  border-color: black lightgray lightgray;
+  border-radius: 360px;
+  margin-bottom: 8px;
+  animation: spin 2s linear infinite;
+}
+
+.spinner-text {
+  animation: blinking 2s linear infinite;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
