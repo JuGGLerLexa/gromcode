@@ -14,7 +14,7 @@ body {
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
   margin: auto;
-  animation: jump 0.4s 0.5s ease-in-out, spin 0.5s ease-in-out, right 1s 2s ease;
+  animation: jump 0.4s 0.5s ease-in-out, spin 0.5s ease-in-out, right 1s 2s forwards;
 }
 
 @keyframes jump {
