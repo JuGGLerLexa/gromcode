@@ -8,6 +8,8 @@
 //   }
 // }
 
+// refactoring
+
 function min(firstNumber, secondNumber) {
   if (firstNumber < secondNumber) return firstNumber;
   return secondNumber;
