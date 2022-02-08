@@ -15,6 +15,7 @@
 .ideas {
   width: 20%;
   background-color: #5af;
+  display: flex;
 }
 
 .image {
@@ -27,8 +28,9 @@
   color: #fff;
   font-weight: 700;
   padding: 4px;
+  margin: auto;
   white-space: nowrap;
   text-transform: uppercase;
-  text-transform: uppercase;
+  overflow: hidden;
   text-overflow: ellipsis; /* при звужуванні дві крпаки (текст) */
 }
