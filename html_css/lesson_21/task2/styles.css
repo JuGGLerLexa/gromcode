@@ -8,6 +8,7 @@
 }
 
 .gallery {
+  display: flex;
   width: 80%;
   background-color: #fa5;
 }
