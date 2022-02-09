@@ -1,0 +1,25 @@
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #8af;
+  margin: 8px;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .square {
+    background-color: #fa8;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .container {
+    flex-direction: column;
+  }
+}
