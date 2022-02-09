@@ -21,7 +21,6 @@ html {
 .main {
   display: flex;
   flex: 1;
-  padding: 0.5em;
 }
 
 .footer {
@@ -34,18 +33,18 @@ html {
   list-style-type: none;
   padding: 0;
 }
-
 .navigation {
   width: 20%;
+  padding: 0.5em;
 }
-
 .section {
   width: 60%;
   font-size: 1.25em;
+  padding: 0.5em;
 }
-
 .news {
   width: 20%;
+  padding: 0.5em;
 }
 
 .units-list {
@@ -58,12 +57,10 @@ html {
   font-size: 1.125em;
   font-weight: 700;
 }
-
 .section__header {
   text-align: center;
   font-size: 5vw;
 }
-
 .nav-list-item {
   background-color: #808080;
   color: #fff;
@@ -76,9 +73,9 @@ html {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
-
 .nav-list-link {
   text-decoration: none;
   color: #fff;
   width: 100%;
 }
+
