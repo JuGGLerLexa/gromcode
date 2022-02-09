@@ -1,0 +1,33 @@
+.navigation {
+  background-color: #fa8;
+  min-height: 200px;
+  display: flex;
+  flex-grow: 1;
+}
+
+.product-list {
+  background-color: #8af;
+  min-height: 200px;
+  display: flex;
+  flex-grow: 1;
+}
+
+.news {
+  background-color: #a18;
+  min-height: 200px;
+  display: flex;
+}
+
+span {
+  background-color: beige;
+  padding: 4px;
+  border-radius: 4px;
+  text-transform: lowercase;
+  margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .products {
+    display: flex;
+  }
+}
