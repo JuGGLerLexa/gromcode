@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 .products {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 .navigation {

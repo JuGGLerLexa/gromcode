@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #555;
+  font-size: 16px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  background: linear-gradient(60deg red orange);
+}
