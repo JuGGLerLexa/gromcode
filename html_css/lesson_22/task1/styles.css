@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 8px;
+  background-color: #8a2be2;
+}
+
+@media screen and (min-width: 600px) {
+  .square {
+    background-color: #ff7f50;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .container {
+    flex-direction: column;
+  }
+}
