@@ -1,16 +1,17 @@
 * {
   box-sizing: border-box;
 }
-
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #555;
   font-size: 16px;
   height: 100%;
-  display: flex;
-  flex-direction: column;
 }
-
 .header {
   color: #fff;
   text-align: center;
@@ -19,15 +20,34 @@ html {
 
 .main {
   display: flex;
-  flex:1;  
+  flex: 1;
+  padding: 0.5em;
 }
 
-
 .footer {
- text-align: center;
+  text-align: center;
   background-color: #e5e5e5;
   padding: 0.5em;
 }
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navigation {
+  width: 20%;
+}
+
+.section {
+  width: 60%;
+  font-size: 1.25em;
+}
+
+.news {
+  width: 20%;
+}
+
 .units-list {
   line-height: 1.75em;
 }
@@ -38,10 +58,12 @@ html {
   font-size: 1.125em;
   font-weight: 700;
 }
+
 .section__header {
   text-align: center;
   font-size: 5vw;
 }
+
 .nav-list-item {
   background-color: #808080;
   color: #fff;
@@ -54,8 +76,9 @@ html {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
+
 .nav-list-link {
-  
   text-decoration: none;
   color: #fff;
   width: 100%;
+}
