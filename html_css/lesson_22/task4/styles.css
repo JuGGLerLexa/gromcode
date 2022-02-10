@@ -13,6 +13,7 @@ html {
   height: 3em;
   padding: 0 1em;
   background-color: #eee;
+  vertical-align: middle;
 }
 
 .fa-bars {
@@ -49,6 +50,10 @@ html {
   color: white;
   text-decoration: none;
   width: 100%;
+}
+
+.nav-list {
+  padding: 0;
 }
 
 @media screen and (min-width: 600px) {
