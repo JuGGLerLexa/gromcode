@@ -29,6 +29,36 @@ html {
 }
 
 .nav-list-item {
-  padding: 0;
+  padding: 0 0.5em 0 0.5em;
   list-style: none;
+  background-color: #808080;
+  line-height: 2em;
+  margin-bottom: 0.5em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.navigation {
+  display: flex;
+  width: 20%;
+  padding: 0.5em;
+}
+
+.nav-list-link {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .button {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    display: none;
+  }
 }
