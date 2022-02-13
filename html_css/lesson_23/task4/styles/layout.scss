@@ -1,13 +1,11 @@
 body {
   width: 100vw;
-  flex-basis: 0;
+  // flex: 0;
 }
 
 .navigation {
   display: flex;
-  flex: 2;
   background-color: #ff7f50;
-  min-height: 200px;
 }
 
 .products-list {
@@ -24,12 +22,12 @@ body {
   flex: 1;
 }
 span {
-  background-color: #faebd7;
-  text-transform: lowercase;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: auto;
   padding: 8px;
   border-radius: 4px;
+  background-color: #faebd7;
+  text-transform: lowercase;
 }
 
 @media screen and (min-width: 600px) {
@@ -57,6 +55,7 @@ span {
   .products-list {
     flex: 2;
   }
+
   .navigation {
     flex: 2;
   }
