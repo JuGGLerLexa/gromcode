@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin: 16px;
+}
+@media screen and (min-width: 600px) {
+  .square {
+    background-color: aqua;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .square {
+    background-color: gold;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

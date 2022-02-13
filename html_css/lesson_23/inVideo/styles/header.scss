@@ -1,25 +1,24 @@
 @import 'variables.scss';
-
 .header {
   height: $unit * 7;
   background-color: $color-grey;
 }
-
 .nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  list-style-type: none;
-  align-items: center;
   height: $unit * 7;
   color: $text-color-secondary;
-  font-weight: 700;
 
   &__item {
+    color: $text-color-secondary;
     background-color: $color-secondary;
-    padding: $unit;
-    margin-left: $unit * 2;
     border-radius: $border-radius;
+    padding: $unit;
+    margin-left: $unit;
+    font-weight: 700;
     cursor: pointer;
 
     &_selected {
