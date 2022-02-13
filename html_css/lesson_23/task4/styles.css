@@ -38,10 +38,12 @@ span {
   }
 
   .products-list {
+    display: flex;
     flex: 2;
   }
 
   .navigation {
+    display: flex;
     flex: 2;
   }
 }
