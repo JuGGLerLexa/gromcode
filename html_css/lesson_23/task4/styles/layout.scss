@@ -1,10 +1,11 @@
 body {
   width: 100vw;
-  flex: 1;
+  // flex: 2;
 }
 
 .navigation {
   display: flex;
+  min-height: 200px; // "не помітив коли фіксив що делітнув ..."
   background-color: #ff7f50;
 }
 
@@ -40,7 +41,6 @@ span {
     flex: 2;
   }
   .navigation {
-    display: flex;
     flex: 2;
   }
 }

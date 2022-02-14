@@ -1,10 +1,10 @@
 body {
   width: 100vw;
-  flex: 1;
 }
 
 .navigation {
   display: flex;
+  min-height: 200px;
   background-color: #ff7f50;
 }
 
@@ -43,7 +43,6 @@ span {
   }
 
   .navigation {
-    display: flex;
     flex: 2;
   }
 }
