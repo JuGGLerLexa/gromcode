@@ -1,3 +1,10 @@
+// input: str, num
+// out: str
+
+// algo
+// якщо не стрінга виходимо з циклу
+// ...
+
 const splitText = (str, num) => {
   if (typeof str !== 'string') return null;
   const strtArr = [];
