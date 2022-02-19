@@ -12,9 +12,7 @@ const splitText = (str, num) => {
 
   while (true) {
     const chunk = str.substr(startPosition, num);
-    if (chunk.length === 0) {
-      break;
-    }
+    if (chunk.length === 0) break;
     strtArr.push(chunk[0].toUpperCase() + chunk.slice(1));
     startPosition += num;
   }

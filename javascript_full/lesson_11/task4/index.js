@@ -1,4 +1,7 @@
-const splitText = (str, num = 10) => {
+// inp: string, number
+// out: string
+
+const splitString = (str, num = 10) => {
   if (typeof str !== 'string') return null;
   const startArr = [];
   let startPosition = 0;
@@ -14,7 +17,7 @@ const splitText = (str, num = 10) => {
 };
 
 // test data
-console.log(splitText('abcd efhg', 4));
-console.log(splitText('abcdefhg', 4));
-console.log(splitText('f', 1));
-console.log(splitText(1, 1));
+console.log(splitString('abcd efhg', 4));
+console.log(splitString('abcdefhg', 4));
+console.log(splitString('f', 1));
+console.log(splitString(1, 1));
