@@ -1,95 +1,90 @@
-// 'use strict';
-// масив - обект класа Array
+console.log('Hello, FE-19!');
 
-// var, let, const
-// let message = 'hello';
-// console.log(message);
+// 1
 
-/* ==================================== */
-/* ===> мутирующие методы массивов <=== */
-/* ===> изменяют исходный массив <===== */
-/* ==================================== */
+function getSenseOfLife() {
+  return 42;
+}
 
-/* pop - удалит из массива последний элемент и вернет его */
-
-// c помощью метода pop достань последний элемент массива numbersList1 и помести его в переменную lastNumber
-// выведи в консоль эту переменную, а так же массив numbersList1 после выполнения pop
-
-const numbersList1 = [1, 2, 3, 4, 5];
-
-console.log('before pop ' + numbersList1);
-// put your code here
-
-// inp: none
-// return: numb
-const res = numbersList1.pop();
+// option
+const res = getSenseOfLife();
 console.log(res);
-console.log('after pop ' + numbersList1);
-/* push - добавит элемент в конец массива */
 
-// c помощью метода push добавь число 6 в конец массива numbersList2
-// выведи в консоль результат работы метода push, а так же массив numbersList2 после выполнения push
+// option 2
+console.log(getSenseOfLife(55));
 
-const numbersList2 = [1, 2, 3, 4, 5];
-// push
+// 2
 
-console.log('before push ' + numbersList2);
+function getSquared(num) {
+  if (num < 0) {
+    return num * num;
+  }
+  return num;
+}
 
-// inp: num
-// out: num
+// console.log(getSquared(4, 6));
+// console.log(getSquared(-8));
 
-const pushRes = numbersList2.push(23);
-console.log(pushRes);
+// function getSquared(num) {
+//   if (num < 0) {
+//     return num * num;
+//   }
+// }
 
-// put your code here
+console.log(getSquared(4, 6));
+console.log(getSquared(-8));
 
-/* shift - удалит из массива первый элемент и вернет его */
+// 3
 
-// c помощью метода shift достань первый элемент массива numbersList3 и помести его в переменную firstNumber
-// выведи в консоль эту переменную, а так же массив numbersList2 после выполнения shift
+function sum(firstNum, secondNum) {
+  console.log(firstNum);
+  console.log(secondNum);
+  return firstNum + secondNum;
+}
 
-const numbersList3 = [1, 2, 3, 4, 5];
+// test data
+console.log(sum(77));
+console.log(sum());
 
-console.log('before shift ', numbersList3);
-// inp: none
-// out: num
+const first = 8;
+const second = 10;
+console.log(sum(first, second));
+console.log(sum(1, 2, 3));
 
-console.log(numbersList3.shift());
-console.log('after shift ', numbersList3);
+// 4
 
-// put your code here
+function print(num1) {
+  return 'I am 34 years old';
+}
 
-/* unshift - добавит элемент в начало массива */
+console.log(print);
 
-// c помощью метода unshift добавь число 0 в начало массива
-// выведи в консоль результат работы метода unshift, а так же массив numbersList4 после выполнения unshift
+// 5
+// function print(age) {
+//   console.log(`I am ${age} years old`);
+// }
+// print(34);
 
-const numbersList4 = [1, 2, 3, 4, 5];
+// function sendEmail(userID) {
+//   const email = getEmailByID(userId);
+//   //send email
+// }
 
-// put your code here
+// test 6
 
-/* ======================================= */
-/* ===> НЕ мутирующие методы массивов <=== */
-/* ===> НЕ изменяют исходный массив <===== */
-/* ======================================= */
+// option 1
+// const mult = (firstNum, secondNum) => {
+//   return firstNum * secondNum;
+// };
 
-// начальный массив
-const anotherNumbersList = [5, 0, 8, 10, -4, 50, 220];
+// option 2
+const mult = (firstNum, secondNum) => firstNum * secondNum;
 
-/* метод filter */
-/* const newArr = arr.filter(callback) - создает и возвращает новый отфильтрованный массив.
-   ф-ция callback запустится по очереди для каждого элемента начального массива arr
-   в newArr попадут только те элементы arr, для которых callback(arr[i]) вернет true
-   callback(arr[i]) === true -> элемент будет добавлен в финальный массив
-   callback(arr[i]) === false -> элемент НЕ будет добавлен в финальный массив */
+// test data
+console.log(mult(20, 14));
 
-// c помощью метода filter создай новый массив bigNumbers, в котором будут числа > 5 из anotherNumbersList
-// выведи bigNumbers в консоль
+const getSquaredArrow = num3 => num3 * num3;
 
-// put your code here
+const getMagicNumber = () => 17;
 
-// c помощью метода filter создай новый массив evenPositions, в котором будут числа из четных позиций которые > 5
-// массива anotherNumbersList
-// выведи evenPositions в консоль
-
-// put your code here
+// console.log((() => 17)() === (() => 17)()));
