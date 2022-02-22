@@ -1,7 +1,17 @@
-import { getSquaredNumbers, getOddNumbers } from './calculator.js';
+// simple assertions
 
-it('should get squared numbers', () => {
-  const result = getSquaredNumbers([1, 2, 3]);
+it('17 и в Африке 17', () => {
+  expect(17).toEqual(17);
+});
 
-  expect(result).toEqual([1, 4, 9]);
+it('18 это вам не 17', () => {
+  expect(18).not.toEqual(17);
+});
+
+const getEvenNumbers = numbers => numbers.filter(num => num % 2 === 0);
+
+it('should get only even numbers from array', () => {
+  const result = getEvenNumbers([1, 2, 3, 4]);
+
+  expect(result).toEqual([2, 4]);
 });
