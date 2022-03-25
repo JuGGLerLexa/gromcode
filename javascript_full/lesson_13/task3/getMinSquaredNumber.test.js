@@ -1,4 +1,3 @@
-import { it } from 'eslint/lib/rule-tester/rule-tester';
 import getMinSquaredNumber from './getMinSquaredNumber.js';
 
 it('should min num', () => {
