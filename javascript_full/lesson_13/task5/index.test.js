@@ -6,8 +6,14 @@ it('should reverse', () => {
   expect(resultReverse).toEqual([5, 4, 3, 2, 1]);
 });
 
-it('should reverse', (clients, balances, client, amount) => {
-  const resultBalanse = withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'John', 50);
+it('should the balance is sufficient', () => {
+  const resultBalanseIn = withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'John', 50);
 
-  expect(resultBalanse).toEqual([5, 4, 3, 2, 1]);
+  expect(resultBalanseIn).toEqual(37);
+});
+
+it('should the balance is not enough', () => {
+  const resultBalanseOut = withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'User', 10);
+
+  expect(resultBalanseOut).toEqual(-1);
 });
