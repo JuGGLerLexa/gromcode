@@ -1,4 +1,4 @@
-import { reverseArray } from './index.js';
+import { reverseArray, withdraw } from './index.js';
 
 it('should reverse', () => {
   const resultReverse = reverseArray([1, 2, 3, 4, 5]);
@@ -6,8 +6,8 @@ it('should reverse', () => {
   expect(resultReverse).toEqual([5, 4, 3, 2, 1]);
 });
 
-it('should reverse', () => {
-  const resultBalanse = withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'John', 50));
+it('should reverse', (clients, balances, client, amount) => {
+  const resultBalanse = withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'John', 50);
 
   expect(resultBalanse).toEqual([5, 4, 3, 2, 1]);
 });

@@ -21,7 +21,7 @@ console.log(reverseArray(test2));
 
 // task 2
 
-const withdraw = (clients, balances, client, amount) => {
+export const withdraw = (clients, balances, client, amount) => {
   const clientId = clients.indexOf(client);
   if (balances[clientId] >= amount) {
     // eslint-disable-next-line no-return-assign
