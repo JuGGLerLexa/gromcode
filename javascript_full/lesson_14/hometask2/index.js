@@ -25,9 +25,9 @@ console.log(messanger1.setMessage('Anna')); // ===> Hello, Anna! Just learn it! 
 
 const messanger2 = createMessenger();
 console.log(messanger2.setMessage('You are learning JS and you do it well'));
-messanger2.setMessage('Michael'); // ===> Hello, Michael! You are learning JS and you do it well! This message was sent by Gromcode
+console.log(messanger2.setMessage('Michael')); // ===> Hello, Michael! You are learning JS and you do it well! This message was sent by Gromcode
 
 const messanger3 = createMessenger();
-messanger3.setMessage('The weather is amazing today');
+console.log(messanger3.setMessage('The weather is amazing today'));
 messanger3.setSender('Anna');
-messanger3.setMessage('Alex'); // ===> Hello, Alex! The weather is amazing today! This message was sent by Anna
+console.log(messanger3.setMessage('Alex')); // ===> Hello, Alex! The weather is amazing today! This message was sent by Anna
