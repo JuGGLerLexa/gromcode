@@ -15,3 +15,8 @@ export function reset(number) {
 export function getMemo() {
   return remember;
 }
+
+// console.log(add(10));
+// console.log(decrease(2));
+// console.log(reset(35));
+// console.log(getMemo(41));
