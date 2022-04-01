@@ -1,16 +1,9 @@
-let message = 'Just learn it!';
+let message = 'Just learn it';
 
-const sendMessage = name => {
-  const sender = 'Your Gromcode';
+export function sendMessage(name = 'Ann') {
+  console.log(`${name}, ${message}! Your Gromcode`);
+}
 
-  console.log(`${name}, ${message} ${sender}`);
-};
-
-const setMessage = text => {
+export const setMessage = (text = 'Good job') => {
   message = text;
 };
-
-sendMessage('Ann');
-
-setMessage('Good job');
-sendMessage('Ann');
