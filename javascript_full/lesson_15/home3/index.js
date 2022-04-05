@@ -7,13 +7,30 @@ export const createLogger = () => {
   const warn = str => {
     const warnObj = {
       message: str,
-      dateTime
+      dateTime: new Date(),
+      type: 'warn',
     };
     loggerArr.push(warnObj);
   };
-  function error(str) {}
-  function log(str) {}
-  function getRecortds() {}
+  function error(str) {
+    const errorObj = {
+      message: str,
+      dateTime: new Date(),
+      type: 'error',
+    };
+    loggerArr.push(errorObj);
+  }
+  function log(str) {
+    const logObj = {
+      message: str,
+      dateTime: new Date(),
+      type: 'log',
+    };
+    loggerArr.push(logObj);
+  }
+
+  function getRecortds(typeOf = String) {
+}
   return {
     warn,
     error,
