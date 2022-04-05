@@ -1,10 +1,25 @@
-'use strict';
+// input: srt
+// output: obj
 
-/**
- * @return {object}
- */
-const createLogger = () => {
-  // put your code here
+export const createLogger = () => {
+  const loggerArr = [];
+
+  const warn = str => {
+    const warnObj = {
+      message: str,
+      dateTime
+    };
+    loggerArr.push(warnObj);
+  };
+  function error(str) {}
+  function log(str) {}
+  function getRecortds() {}
+  return {
+    warn,
+    error,
+    log,
+    getRecortds,
+  };
 };
 
 // examples
