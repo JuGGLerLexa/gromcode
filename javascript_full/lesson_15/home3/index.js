@@ -29,8 +29,12 @@ export const createLogger = () => {
     loggerArr.push(logObj);
   }
 
-  function getRecortds(typeOf = String) {
-}
+  function getRecortds(typeOf = 'string') {
+    if (typeOf !== 'string') {
+      
+    }
+    }
+  }
   return {
     warn,
     error,
