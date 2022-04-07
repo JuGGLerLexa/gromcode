@@ -15,7 +15,7 @@ const createLogger = () => {
     if (typeAll) {
       return loggerArr.filter(el => el.type === typeAll).reverse();
     }
-    return typeAll.reverse();
+    return loggerArr.reverse();
   }
 
   return { warn, error, log, getRecords };
