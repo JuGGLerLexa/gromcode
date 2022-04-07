@@ -5,12 +5,10 @@ const createLogger = () => {
     loggerArr.push({ message: str, dateTime: new Date(), type: 'warn' });
   };
   function error(str) {
-    const errorObj = { message: str, dateTime: new Date(), type: 'error' };
-    loggerArr.push(errorObj);
+    loggerArr.push({ message: str, dateTime: new Date(), type: 'error' });
   }
   function log(str) {
-    const logObj = { message: str, dateTime: new Date(), type: 'log' };
-    loggerArr.push(logObj);
+    loggerArr.push({ message: str, dateTime: new Date(), type: 'log' });
   }
 
   function getRecords(typeAll) {
