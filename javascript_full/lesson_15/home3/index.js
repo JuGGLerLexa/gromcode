@@ -1,51 +1,32 @@
-// input: srt
-// output: obj
-
-export const createLogger = () => {
+const createLogger = () => {
   const loggerArr = [];
 
   const warn = str => {
-    const warnObj = {
-      message: str,
-      dateTime: new Date(),
-      type: 'warn',
-    };
-    loggerArr.push(warnObj);
+    loggerArr.push({ message: str, dateTime: new Date(), type: 'warn' });
   };
   function error(str) {
-    const errorObj = {
-      message: str,
-      dateTime: new Date(),
-      type: 'error',
-    };
+    const errorObj = { message: str, dateTime: new Date(), type: 'error' };
     loggerArr.push(errorObj);
   }
   function log(str) {
-    const logObj = {
-      message: str,
-      dateTime: new Date(),
-      type: 'log',
-    };
+    const logObj = { message: str, dateTime: new Date(), type: 'log' };
     loggerArr.push(logObj);
   }
 
-  function getRecortds(typeOf = 'string') {
-    if (typeOf !== 'string') {
-      
+  function getRecords(typeAll) {
+    if (typeAll) {
+      return loggerArr.filter(el => el.type === typeAll).reverse();
     }
-    }
+    return typeAll.reverse();
   }
-  return {
-    warn,
-    error,
-    log,
-    getRecortds,
-  };
+
+  return { warn, error, log, getRecords };
 };
 
 // examples
 const logger1 = createLogger();
-logger1.log('User logged in');
+
+console.log(logger1.log('User logged in'));
 logger1.warn('User is tring to ented restricted page');
 logger1.log('User logged out');
 logger1.error('Unexpected error on the site');
