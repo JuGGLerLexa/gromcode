@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 const user = {
   getFullName: function getFullName() {
     return `${this.firstName} ${this.lastName}`;
