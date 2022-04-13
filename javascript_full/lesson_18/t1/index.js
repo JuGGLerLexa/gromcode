@@ -33,20 +33,22 @@
 // setTimeout(user.sayHi.bind(user), 100);
 // setTimeout(() => user.sayHi(), 100);
 
-const event = {
+export const event = {
     guests: [
-        { name: 'Tom', email: 't@gmail.com', age: 17},
-        { name: 'Bob', email: 'b@gmail.com', age: 18},
+        { name: 'Tom', age: 17, email: 't@gmail.com' },
+        { name: 'Lexa', age: 21, email: 'lexa@gmail.com' },
+        { name: 'John', age: 18, email: 'example@server.com' },
     ],
-    message: 'Welcome to the party',
-    getInvintations() {
+    message: 'Welcome to the party!',
+    getInvitations() {
         return this.guests
+
         .filter(({ age }) => age >= 18)
         .map(({ name, email}) => ({
-            text: `Hi ${name}. ${this.message}`,
-            email
+            email,
+            message: `Dear ${name}! ${this.message}`,
            }));
-    }
-}
+    },
+};
 
-console.log(event.getInvintations());
+console.log(event.getInvitations());

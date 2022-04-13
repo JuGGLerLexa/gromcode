@@ -8,12 +8,15 @@
 //   },
 // };
 
-const wallet = {
+export const wallet = {
   transactions: [1, 5, 89, 337, 3],
   getMax() {
-    return Math.max.apply(...this.transactions);
+    return Math.max(...this.transactions);
   },
   getMin() {
-    return Math.min.apply(...this.transactions);
+    return Math.min(...this.transactions);
   },
 };
+
+console.log(wallet.getMax());
+console.log(wallet.getMin());
