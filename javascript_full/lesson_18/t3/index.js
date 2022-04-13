@@ -17,18 +17,28 @@
 
 // call
 
+// function argsSum() {
+//   return [].reduce.call(
+//     arguments,
+//     (acc, elem) => {
+//       return acc + elem;
+//     },
+//     0,
+//   );
+// }
+
+// console.log(argsSum(1, 2, 3, 4));
+
+// [].reduce((acc, elem) => {}, 0);
+
+// spred
+
 function argsSum() {
-  return [].reduce.call(
-    arguments,
-    (acc, elem) => {
-      return acc + elem;
-    },
-    0,
-  );
+  return [...arguments].reduce((acc, elem) => {
+    return acc + elem;
+  }, 0);
 }
 
 console.log(argsSum(1, 2, 3, 4));
 
-[].reduce((acc, elem) => {}, 0);
-
-// 36.15 хв
+// [].reduce((acc, elem) => {}, 0);
