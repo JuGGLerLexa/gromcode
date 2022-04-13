@@ -34,3 +34,4 @@ export const user = {
 console.log(user.getFullName());
 console.log(user.setFullName('Jim Carrey'));
 console.log(user.getFullName());
+console.log(user.getFullName([4]));
