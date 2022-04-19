@@ -1,22 +1,25 @@
-const vehicle = {
+export const vehicle = {
   move() {
-    console.log('moving');
+    console.log(`${this.name} is moving`);
   },
+
   stop() {
-    console.log('stopped');
+    console.log(`${this.name} stopped`);
   },
 };
 
-const ship = {
-  name: 'Aurora',
-  hasWheels: false,
-  liftAnchorDown() {
-    console.log('lifting anchor down');
+export const ship = {
+  name: 'Argo',
+  startMachine() {
+    console.log(`${this.name} lifting anchor up`);
+    this.move();
   },
-  liftAnchorUp() {
-    console.log('lifting anchor up');
+  stopMachine() {
+    console.log(`${this.name} lifting anchor down`);
+    this.stop();
   },
-  __proto__: vehicle,
 };
 
-console.log(ship);
+Object.setPrototypeOf(ship, vehicle);
+
+ship.startMachine();

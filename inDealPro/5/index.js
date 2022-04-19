@@ -7,6 +7,6 @@ function Order(status) {
   };
 }
 
-var order = new
+var order = new Order('new'); // in my answear: Order('new')
 
 order.showStatus()

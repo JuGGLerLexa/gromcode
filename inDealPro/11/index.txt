@@ -15,12 +15,14 @@ const inputDataArray = [
 
 // JSX
 
-// const getResult = (inputDataArray, parentName) => {
-//     let resultObj = {}
-//     for (let i = 0; i < inputDataArray.length; i++) {
-//         if (inputDataArray[i].parentName === <MISSED_PART> ) {
-//             resultObj[inputDataArray[i].< MISSED_PART >] = <MISSED_PART>;
-//           }
-//   }
-//                 return resultObj;
-// };
+const getResult = (inputDataArray, parentName) => {
+    let resultObj = {}
+    for (let i = 0; i < inputDataArray.length; i++) {
+        if (inputDataArray[i].parentName ===  <MISSED_PART> </MISSED_PART>) {
+            resultObj[inputDataArray[i].<MISSED_PART>] = <MISSED_PART> </MISSED_PART>;
+          }
+  }
+   return resultObj;
+};
+
+console.log(JSON.stringify(getResult(inputDataArray, null), null, 4));

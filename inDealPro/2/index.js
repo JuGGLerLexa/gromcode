@@ -7,3 +7,5 @@ function foo(a) {
 }
 
 console.log(foo(5)(2)(7));
+
+// in my answear: return

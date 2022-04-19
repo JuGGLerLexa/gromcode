@@ -9,3 +9,5 @@ function revBySep(str, sep) {
 console.log(revBySep('I want to become a JavaScript Ninja!', ''));
 
 console.log(revBySep('I want to become a JavaScript Ninja!', ' '));
+
+// in my answear: reverse

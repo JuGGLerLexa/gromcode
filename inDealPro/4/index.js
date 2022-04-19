@@ -7,3 +7,5 @@ function foo(time, str, callback) {
 foo(3000, 'Hello', responseStr => {
   console.log(responseStr);
 });
+
+//  in my answear: callback
