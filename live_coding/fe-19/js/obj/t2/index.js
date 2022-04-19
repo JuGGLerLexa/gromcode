@@ -4,16 +4,26 @@
 // function compareObjects(obj1, obj2) {
 //   return JSON.stringify(obj1) === JSON.stringify(obj2);
 // }
-function compareObjects(obj1, obj2) {
-  return JSON.stringify(obj1) === JSON.stringify(obj2);
-}
-// algo
-// 1. get keys, get values
-// 2. check keys length
-// 3.1. compare every key/value with .every method
-// 3.2. compare every key/value if some if not equal - false
-// examples
+// function compareObjects(obj1, obj2) {
+//   return JSON.stringify(obj1) === JSON.stringify(obj2);
+// }
+// // algo
+// // 1. get keys, get values
+// // 2. check keys length
+// // 3.1. compare every key/value with .every method
+// // 3.2. compare every key/value if some if not equal - false
+// // examples
 
+function compareObjects(obj1, obj2) {
+  const keys = Object.keys(obj1);
+
+  if (keys.length !== Object.keys(obj2).length) {
+    return false;
+  }
+  return keys.every(key => obj1[key] === obj2[key]);
+}
+
+// test
 const obj1 = {
   name: 'Tom',
   age: 17,
