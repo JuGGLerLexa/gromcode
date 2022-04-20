@@ -10,5 +10,3 @@ export default {
     this.lastName = lastName;
   },
 };
-
-// test deta
