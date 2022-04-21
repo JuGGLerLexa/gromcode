@@ -14,7 +14,7 @@ class Vehicle {
   }
 }
 
-class Ship extends Vehicle {
+class Ship extends Vehicle { // extends Ship наслідує Vehicle
   constructor(name, speed) {
     super(name, false);
     this.speed = speed;
