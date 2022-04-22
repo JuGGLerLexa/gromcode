@@ -1,7 +1,7 @@
 /* eslint-disable */
-class Vehicle {
-  constructor(name, hasWheels) {
-    this.hasWheels = hasWheels;
+export class Vehicle {
+  constructor(name, numberOfWheels) {
+    this.numberOfWheels = numberOfWheels;
     this.name = name;
   }
 
@@ -14,25 +14,25 @@ class Vehicle {
   }
 }
 
-class Ship extends Vehicle { // extends Ship наслідує Vehicle
-  constructor(name, speed) {
-    super(name, false);
-    this.speed = speed;
+export class Ship extends Vehicle { // extends Ship наслідує Vehicle
+  constructor(name, numberOfWheels ,maxSpeed) {
+    super(name, numberOfWheels);
+    this.maxSpeed = maxSpeed;
   }
 
-  startMachine() {
+  move() {
     console.log(`${this.name} lifting anchor up`);
-    this.move();
+    super.move();
   }
 
-  stopMachine() {
-    this.stop();
-    console.log(`${this.name} lifting anchor d`);
+  stop() {
+    super.stop();
+    console.log(`${this.name} lifting anchor down`);
   }
 }
 
 const ship1 = new Ship('Aurora', 17);
 
-ship1.startMachine();
+ship1.move();
 
 console.log(ship1);

@@ -1,6 +1,6 @@
 // Wallet
 
-class Wallet {
+export class Wallet {
   // _balance = 0;
   constructor() {
     this._balance = 0;
