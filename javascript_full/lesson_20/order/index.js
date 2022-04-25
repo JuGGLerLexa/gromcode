@@ -1,30 +1,34 @@
+const validOrderTypes = ['Buy', 'Sell'];
+
 export class Order {
   constructor(price, city, type) {
+    this.id = Math.random().toString();
     this.price = price;
+    this.dateCreated = new Date();
+    this.isConfirmed = false;
+    this.dateConfirmed = null;
     this.city = city;
     this.type = type;
-    this.id = Math.random();
-    this.confirmed = false;
-    this.dateConfirmed = null;
-    this.date = new Date();
   }
 
   checkPrice() {
-    if (this.price > 1000) {
-      return true;
-    }
-
-    return false;
+    return this.price > 1000;
   }
 
   confirmOrder() {
-    this.confirmed = true;
-    this.date = new Date();
-    return this.confirmOrder;
+    if (!this.isConfirmed) {
+      this.isConfirmed = true;
+      this.dateConfirmed = new Date();
+    }
   }
 
   isValidType() {
-    if (this.type === 'Buy' || this.type === 'Sell') return true;
-    return false;
+    return validOrderTypes.iscludes(this.type);
   }
 }
+
+// test data
+
+const newOrder = new Order();
+console.log(newOrder.checkPrice(1200));
+console.log(newOrder.isValidType());
