@@ -1,14 +1,12 @@
-const validOrderTypes = ['Buy', 'Sell'];
-
 export class Order {
   constructor(price, city, type) {
-    this.id = Math.random().toString();
-    this.price = price;
     this.dateCreated = new Date();
     this.isConfirmed = false;
-    this.dateConfirmed = null;
+    this.id = Math.random().toString();
+    this.price = price;
     this.city = city;
     this.type = type;
+    this.dateCreated = new Date();
   }
 
   checkPrice() {
@@ -23,12 +21,9 @@ export class Order {
   }
 
   isValidType() {
-    return validOrderTypes.iscludes(this.type);
+    if (this.type === 'Buy' || this.type === 'Sell') {
+      return true;
+    }
+    return false;
   }
 }
-
-// test data
-
-const newOrder = new Order();
-console.log(newOrder.checkPrice(1200));
-console.log(newOrder.isValidType());
