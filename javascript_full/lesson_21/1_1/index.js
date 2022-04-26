@@ -6,10 +6,27 @@ export const tasks = [
   { text: 'Buy meat', done: true },
 ];
 
-/**
- * @param {object[]} tasksList
- * @return {undefined}
- */
-const renderTasks = tasksList => {
-  // put your code here
+const renderListItems = listItems => {
+  const listItem = document.querySelector('.list');
+
+  const listItemsElems = listItems
+    .sort((a, b) => a.done - b.done)
+    .map(({ text, done }) => {
+      const listItemsElem = document.createElement('li');
+      listItemsElem.classList.add('list__item');
+      if (done) {
+        listItemsElem.classList.add('list__item-checkbox');
+      }
+      const checkboxElem = document.createElement('input');
+      checkboxElem.setAttribute('type', 'checkbox');
+      checkboxElem.checked = done;
+      checkboxElem.classList.add('list__item-checkbox');
+      listItemsElem.append(text);
+
+      return listItemsElem;
+    });
+
+  listItem.append(...listItemsElems);
 };
+
+renderListItems(tasks);
