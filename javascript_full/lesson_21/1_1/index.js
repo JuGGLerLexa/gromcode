@@ -6,27 +6,27 @@ export const tasks = [
   { text: 'Visit meat', done: true },
 ];
 
-const renderListItems = listItems => {
-  const listItem = document.querySelector('.list');
+const renderListItems = tasksList => {
+  const listElem = document.querySelector('.list');
 
-  const listItemsElems = listItems
+  const listItemsElems = tasksList
     .sort((a, b) => a.done - b.done)
     .map(({ text, done }) => {
-      const listItemsElem = document.createElement('li');
-      listItemsElem.classList.add('list__item');
+      const listItemElem = document.createElement('li');
+      listItemElem.classList.add('list__item');
       if (done) {
-        listItemsElem.classList.add('list__item-checkbox');
+        listItemElem.classList.add('list__item_done');
       }
       const checkboxElem = document.createElement('input');
       checkboxElem.setAttribute('type', 'checkbox');
       checkboxElem.checked = done;
       checkboxElem.classList.add('list__item-checkbox');
-      listItemsElem.append(text);
+      listItemElem.append(checkboxElem, text);
 
-      return listItemsElem;
+      return listItemElem;
     });
 
-  listItem.append(...listItemsElems);
+  listElem.append(...listItemsElems);
 };
 
 renderListItems(tasks);
