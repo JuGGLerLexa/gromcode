@@ -1,6 +1,6 @@
 const getTitleElement = () => {
   const titleElem = document.querySelector('.title');
-  console.log(titleElem);
+  console.dir(titleElem);
   return titleElem;
 };
 
@@ -9,3 +9,6 @@ const getInputElement = () => {
   console.dir(inputElem);
   return inputElem;
 };
+
+getTitleElement();
+getInputElement();
