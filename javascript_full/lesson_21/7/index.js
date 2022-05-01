@@ -1,3 +1,4 @@
 export const createButton = buttonText => {
-  document.createElement
+  const createButton = buttonText.document.createElement('button');
+  return createButton.dociment.querySelector('body').append(createButton);
 };
