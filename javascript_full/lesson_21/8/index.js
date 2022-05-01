@@ -2,21 +2,21 @@ export const finishList = () => {
   const list = document.querySelector('.list');
   const special = document.querySelector('.special');
 
-  const eight = document.createElement('eight');
-  eight.textContent = '8';
-  list.append(eight);
+  const append = document.createElement('eight');
+  append.textContent = 8;
+  list.append(append);
 
-  const one = document.createElement('one');
-  one.textContent = '1';
-  list.prepend(one);
+  const prepend = document.createElement('one');
+  prepend.textContent = 1;
+  list.prepend(prepend);
 
-  const four = document.createElement('four');
-  four.textContent = '4';
-  special.before(four);
+  const before = document.createElement('four');
+  before.textContent = 4;
+  special.before(before);
 
-  const six = document.createElement('six');
-  six.textContent = '6';
-  special.after(six);
+  const after = document.createElement('six');
+  after.textContent = 6;
+  special.after(after);
 };
 
 finishList();
