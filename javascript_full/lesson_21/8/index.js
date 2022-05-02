@@ -18,5 +18,3 @@ export const finishList = () => {
   after.textContent = '6';
   special.after(after);
 };
-
-finishList();

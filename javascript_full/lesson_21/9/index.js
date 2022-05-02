@@ -7,5 +7,3 @@ export const finishForm = () => {
   const futureInput = document.querySelector('[name = password]');
   futureInput.type = 'password';
 };
-
-finishForm();

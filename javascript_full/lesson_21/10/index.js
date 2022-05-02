@@ -6,5 +6,3 @@ const manegeClasses = () => {
     document.querySelector('.four').classList.add('another-class');
   }
 };
-
-manegeClasses();
