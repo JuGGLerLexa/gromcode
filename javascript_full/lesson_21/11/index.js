@@ -1,6 +1,8 @@
-/* eslint-disable */
 export const squaredNumbers = () => {
-  Array.from(document.querySelectorAll('.number')).forEach(
-    el => (el.dataset.squaredNumbers = el.dataset.number * el.dataset.number),
-  );
+  const arrF = Array.from(document.querySelectorAll('.number')).map(el => {
+    const num = el.dataset.number * el.dataset.number;
+    el.setAttribute('data-squared-number', num);
+    return el;
+  });
+  return arrF;
 };
