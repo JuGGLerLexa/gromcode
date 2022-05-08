@@ -5,17 +5,21 @@ const tasks = [
   { text: 'Visit doctor', done: true },
   { text: 'Buy meat', done: true },
 ];
-
+const addId = () => {
+  return tasks.map(el => (el.id = Math.random().toString()));
+};
 const listElem = document.querySelector('.list');
 
 const renderTasks = tasksList => {
+  addId();
   const tasksElems = tasksList
     .sort((a, b) => a.done - b.done)
-    .map(({ text, done }) => {
+    .map(({ text, done, id }) => {
       const listItemElem = document.createElement('li');
       listItemElem.classList.add('list__item');
       const checkbox = document.createElement('input');
       checkbox.setAttribute('type', 'checkbox');
+      checkbox.setAttribute('data-id', id);
       checkbox.checked = done;
       checkbox.classList.add('list__item-checkbox');
       if (done) {
@@ -28,26 +32,25 @@ const renderTasks = tasksList => {
 
   listElem.append(...tasksElems);
 };
-
 renderTasks(tasks);
-
-const buttonEl = document.querySelector('.create-task-btn');
-const inputElem = document.querySelector('.task-input');
+console.log(tasks);
+const buttonElem = document.querySelector('.create-task-btn');
+const taskInputElem = document.querySelector('.task-input');
 
 const addTaskList = () => {
-  if (inputElem.value === '') {
+  if (taskInputElem.value === '') {
     return;
   }
-  const elemTasks = { text: inputElem.value, done: false };
+  const elemTasks = { text: taskInputElem.value, done: false };
 
   tasks.push(elemTasks);
   listElem.innerHTML = '';
-  inputElem.value = '';
+  taskInputElem.value = '';
 
   renderTasks(tasks);
 };
 
-buttonEl.addEventListener('click', addTaskList);
+buttonElem.addEventListener('click', addTaskList);
 
 const onChekbox = event => {
   const isSeat = event.target.dataset.id;
