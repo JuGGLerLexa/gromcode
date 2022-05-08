@@ -31,4 +31,42 @@ const renderTasks = tasksList => {
 
 renderTasks(tasks);
 
-// put your code here
+const buttonEl = document.querySelector('.create-task-btn');
+const inputElem = document.querySelector('.task-input');
+
+const addTaskList = () => {
+  if (inputElem.value === '') {
+    return;
+  }
+  const elemTasks = { text: inputElem.value, done: false };
+
+  tasks.push(elemTasks);
+  listElem.innerHTML = '';
+  inputElem.value = '';
+
+  renderTasks(tasks);
+};
+
+buttonEl.addEventListener('click', addTaskList);
+
+const onChekbox = event => {
+  const isSeat = event.target.dataset.id;
+
+  if (!isSeat) {
+    return;
+  }
+  const clickCheck = tasks.find(el => el.id === isSeat);
+
+  if (clickCheck.done === true) {
+    clickCheck.done = false;
+  } else {
+    clickCheck.done = true;
+  }
+
+  listElem.innerHTML = '';
+  renderTasks(tasks);
+};
+
+listElem.addEventListener('click', onChekbox);
+
+console.log(tasks);
