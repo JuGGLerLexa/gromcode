@@ -1,68 +1,34 @@
-/* eslint-disable consistent-return */
-const arenaEl = document.querySelector('.arena');
-const boardSeatEl = document.querySelector('.board__selected-seat');
+const tasks = [
+  { text: 'Buy milk', done: false },
+  { text: 'Pick up Tom from airport', done: false },
+  { text: 'Visit party', done: false },
+  { text: 'Visit doctor', done: true },
+  { text: 'Buy meat', done: true },
+];
 
-const getNubersArr = (from, to) => {
-  const res = [];
-  for (let i = from; i <= to; i += 1) {
-    res.push(i);
-  }
-  return res;
+const listElem = document.querySelector('.list');
+
+const renderTasks = tasksList => {
+  const tasksElems = tasksList
+    .sort((a, b) => a.done - b.done)
+    .map(({ text, done }) => {
+      const listItemElem = document.createElement('li');
+      listItemElem.classList.add('list__item');
+      const checkbox = document.createElement('input');
+      checkbox.setAttribute('type', 'checkbox');
+      checkbox.checked = done;
+      checkbox.classList.add('list__item-checkbox');
+      if (done) {
+        listItemElem.classList.add('list__item_done');
+      }
+      listItemElem.append(checkbox, text);
+
+      return listItemElem;
+    });
+
+  listElem.append(...tasksElems);
 };
 
-const getLinesSeat = () =>
-  getNubersArr(1, 10)
-    .map(
-      el => `
-  <div
-    class="sector__seat"
-    data-seat-number="${el}"
-  ></div>
-  `,
-    )
-    .join('');
+renderTasks(tasks);
 
-const getSectorLines = () => {
-  const seats = getLinesSeat();
-  return getNubersArr(1, 10)
-    .map(
-      el => `
-  <div
-    class="sector__line"
-    data-line-number="${el}"
-  >${seats}</div>
-  `,
-    )
-    .join('');
-};
-
-const renderArena = () => {
-  const lines = getSectorLines();
-  const innerStr = getNubersArr(1, 3)
-    .map(
-      el => `
-  <div
-    class="sector"
-    data-sector-number="${el}"
-  >${lines}</div>
-  `,
-    )
-    .join('');
-  arenaEl.innerHTML = innerStr;
-};
-
-const onSeatClick = event => {
-  const isSeat = event.target.classList.contains('sector__seat');
-
-  if (!isSeat) return null;
-
-  const seatNum = event.target.dataset.seatNumber;
-  const lineNum = event.target.closest('.sector__line').dataset.lineNumber;
-  const sectorNum = event.target.closest('.sector').dataset.sectorNumber;
-
-  boardSeatEl.textContent = `S ${sectorNum} - L ${lineNum} - S ${seatNum}`;
-};
-
-arenaEl.addEventListener('click', onSeatClick);
-
-renderArena();
+// put your code here
