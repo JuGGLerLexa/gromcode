@@ -10,7 +10,7 @@
 
 // console.log(result);
 
-const weekDays = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'St', 'Su'];
+export const weekDays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'St'];
 
 export const dayOfWeek = (date, days) => {
   const day = new Date(date).getDate();
@@ -18,6 +18,6 @@ export const dayOfWeek = (date, days) => {
   return weekDays[new Date(dateInFuture).getDay()];
 };
 
-const result = dayOfWeek(new Date(2019, 0, 1), 14);
+// const result = dayOfWeek(new Date(2019, 0, 6), 14);
 
-console.log(result);
+// console.log(result);
