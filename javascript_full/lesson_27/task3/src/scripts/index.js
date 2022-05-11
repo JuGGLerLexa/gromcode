@@ -1,7 +1,7 @@
 import { initTodoListHandlers } from './todoList.js';
-import { renderTasks } from './renderer';
+import { renderTasks } from './renderer.js';
 
-document.querySelector('.DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   renderTasks();
   initTodoListHandlers();
 });
