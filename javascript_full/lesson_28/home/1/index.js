@@ -1,23 +1,21 @@
-// calc(3).add(2).mult(4).div(10).substract(5).result(); // -3
-
 export const calc = initValue => {
   let result = initValue;
 
   const calculator = {
-    add(value) {
-      result += value;
-      return calculator;
-    },
-    mult(value) {
-      result *= value;
+    add(number) {
+      result += number;
       return this;
     },
-    substract(value) {
-      result -= value;
+    mult(number) {
+      result *= number;
       return this;
     },
-    div(value) {
-      result /= value;
+    subtract(number) {
+      result -= number;
+      return this;
+    },
+    div(number) {
+      result /= number;
       return this;
     },
     result() {
@@ -28,6 +26,9 @@ export const calc = initValue => {
   return calculator;
 };
 
+// test data
 const result = calc(3).add(2).mult(4).div(10).substract(5).result();
-
 console.log(result);
+
+const res = calc(10).add(5).mult(3).div(9).substract(2).result();
+console.log(res);
