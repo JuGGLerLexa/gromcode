@@ -1,14 +1,31 @@
-// addImage
+export const addImage = (imgSrc, callback) => {
+  const imgElem = document.createElement('img');
+  imgElem.setAttribute('alt', 'My Photo');
+  imgElem.src = imgSrc;
+  const containerElem = document.querySelector('.page');
 
-const buttonElem = document.querySelector('#button');
+  containerElem.append(imgElem);
 
-buttonElem.addEventListener('click', () => console.log('Click'));
+  const onImageLoaded = () => {
+    callback(null, imgElem);
+    // const { width, height } = imgElem;
+    // callback(null, { width, height });
+  };
 
-let sum = 0;
-const startTime = new Date();
-console.log('Cecle started');
-for (let i = 0; i < 5e9; i += 1) {
-  sum += 1;
-}
-const endTime = new Date();
-console.log(`Cycle took ${endTime - startTime}ms`);
+  imgElem.addEventListener('load', onImageLoaded);
+  imgElem.addEventListener('error', () => callback('Image load is failed'));
+};
+
+const imgSrc =
+  'https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg';
+
+const onImageLoaded = (error, data) => {
+  if (error) {
+    console.log(error);
+    return;
+  }
+  const { width, height } = data;
+  const sizeElem = document.querySelector('.image-size');
+  sizeElem.textContent = `${width} x ${height}`;
+};
+addImage(imgSrc, onImageLoaded);
