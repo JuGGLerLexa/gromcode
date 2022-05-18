@@ -23,9 +23,11 @@ const addImageWithPromise = imgSrc => {
 const imgSrc =
   'https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg';
 
-const result = addImageWithPromise(imgSrc);
+const resultPromise = addImageWithPromise(imgSrc);
 
-console.log(result);
+resultPromise.catch(error => console.log(error));
+
+// console.log(result);
 
 // const onImageLoaded = (error, imgElem) => {
 //   if (error) {
