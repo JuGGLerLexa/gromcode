@@ -5,6 +5,8 @@ console.dir(new Date());
 
 const serverUrl = 'https://6272c6bfa6522e24ac3e537b.mockapi.io/v1/users';
 
+// validate
+
 function createUserHandler() {
   //   event.preventDefault();
   console.log('test');
@@ -48,8 +50,11 @@ function createUserHandler() {
     .then(body => {
       console.log('body is read');
 
+      alert(JSON.stringify(body));
       console.log(body);
     });
+
+  console.log('DONE');
 }
 
 formElem.addEventListener('submit', createUserHandler);
