@@ -1,10 +1,8 @@
-const urls = ['https://server.com/us', 'https://server.com/eu', 'https://server.com/au'];
-
-const getRandomDelay = (from, to) => from + Math.random() * (to - from);
+const getRandomNumber = (from, to) => from + Math.random() * (to - from);
 
 const request = url =>
   new Promise(resolve => {
-    const delay = getRandomDelay(1000, 3000);
+    const randomDelay = getRandomNumber(1000, 3000);
     setTimeout(() => {
       resolve({
         userData: {
@@ -13,14 +11,14 @@ const request = url =>
         },
         source: url,
       });
-    }, delay);
+    }, randomDelay);
   });
 
-export const getUserASAP = userId => {
-  const userUrls = urls.map(serverUrl => `${serverUrl}/${userId}`);
-  const requests = userUrls.map(url => request(url));
+const servers = ['https://server.com/eu', 'https://server.com/fr', 'https://server.com/ua'];
 
+export const getUserASAP = userId => {
+  const userUrls = servers.map(serverUrl => `${serverUrl}/users/${userId}`);
+  const requests = userUrls.map(userUrl => request(userUrl));
   return Promise.race(requests);
 };
-
-getUserASAP('id-123').then(res => console.log(res));
+getUserASAP('user-id-1').then(res => console.log(res));
