@@ -18,7 +18,7 @@ const getSum = arr => {
   console.log(arr1);
   return arr1.reduce((acc, val) => acc + Number(val), 0);
 };
-const asyncSum = (...promises) =>
+export const asyncSum = (...promises) =>
   Promise.all(promises)
     .then(numbers => getSum(numbers))
     .catch(() => Promise.reject(new Error("Can't calculate")));
