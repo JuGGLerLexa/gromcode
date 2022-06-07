@@ -1,9 +1,9 @@
-const spinerElem = document.querySelector('.spinner');
+const spinnerElem = document.querySelector('.spinner');
 
 export const showSpinner = () => {
-  spinerElem.classList.remove('spinner_hidden');
+  spinnerElem.classList.remove('spinner_hidden');
 };
 
 export const hideSpinner = () => {
-  spinerElem.classList.remove('spinner_hidden');
+  spinnerElem.classList.add('spinner_hidden');
 };
